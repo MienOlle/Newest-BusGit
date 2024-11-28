@@ -21,7 +21,7 @@ public class buttonToggleScript : MonoBehaviour
         originalColor = new Color[numButton];
         selectedColor = new Color[numButton];
         isSelected = new bool[numButton];
-        toggleLogic.getNumButton(numButton);
+        toggleLogic.getNumButton(numButton);            //give the numButton to MonitorLogic
 
         //Set the original color and selected color for each button
         //Set onClickListener to be called when the button is clicked
@@ -31,10 +31,10 @@ public class buttonToggleScript : MonoBehaviour
             isSelected[i] = false;
 
             int index = i;
-            anomalyButtons[i].onClick.AddListener(() => ToggleButton(index));
+            anomalyButtons[i].onClick.AddListener(() => ToggleButton(index));           //add listener to each button
         }
 
-        submitButton.onClick.AddListener(() => submitPressed());
+        submitButton.onClick.AddListener(() => submitPressed());                        //add listener to submit button
         submitInteractable(false);          //initially set submit button uninteractable
     }
 
@@ -55,11 +55,12 @@ public class buttonToggleScript : MonoBehaviour
     }
 
     private void submitPressed(){
-        //Setting all anomalySelected in MonitorLogic Script to become false;
+        //submission checking and setting the submit button back to uninteractable
         toggleLogic.submittedCheck();
         submitInteractable(false);
     }
 
+    //Links to buttonToggleScript to unselect all button
     public void unselectButton(){
         for(int i = 0;i < numButton;i++){
             if(isSelected[i] == true){

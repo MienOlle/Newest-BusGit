@@ -14,15 +14,13 @@ public class gameLogic : MonoBehaviour
     bool anomaly1State;
     bool anomaly2State;
 
-    // Start is called before the first frame update
     void Awake()
     {
-        //find game object anomalies
         anomalyItem = GameObject.FindGameObjectsWithTag("anomalies");
     }
 
     void Start(){
-        //set all anomalies gameObject to false
+        //initially set all anomalies gameObject to false
         foreach(GameObject anom in anomalyItem){
             anom.SetActive(false);
         }
@@ -43,19 +41,12 @@ public class gameLogic : MonoBehaviour
                 anomaly1State = true;
                 anomalyChecker.setAnomActivated(0, true);       //Setting the anomActivated in the MonitorLogic for checking
 
-                if(Random.Range(0,2) == 1){
-                    anomaly1Second();
-                    Debug.Log("Anomaly 1 V.2 Activated");
-                }else{
-                    anomaly1();
-                    Debug.Log("Anomaly 1 Activated");
-                }
+                anomaly1();
             }else if(activateAnomaly == 2 && anomaly2State == false){
                 anomaly2State = true;
                 anomalyChecker.setAnomActivated(1, true);
 
                 anomaly2();
-                Debug.Log("Anomaly 2 Activated");
             }else{
                 continue;
             }
@@ -70,15 +61,16 @@ public class gameLogic : MonoBehaviour
 
     void anomaly1(){
         anomaly1Origin.SetActive(false);
-        anomaly1Changed.SetActive(true);
-    }
-
-    void anomaly1Second(){
-        anomaly1Origin.SetActive(false);
-        anomaly1V2Changed.SetActive(true);
+        if(Random.Range(0,2) == 0){
+            anomaly1Changed.SetActive(true);
+            Debug.Log("Anomaly 1 Activated");
+        }else{
+            anomaly1V2Changed.SetActive(true);
+            Debug.Log("Anomaly 1 V.2 Activated");
+        }
     }
 
     void anomaly2(){
-        
+        Debug.Log("Anomaly 2 Activated");
     }
 }

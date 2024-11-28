@@ -11,7 +11,6 @@ public class restartLogic : MonoBehaviour
     private GameObject[] anomalyItem;
     private int gameLevel = 0;
     private bool EndHit = true;
-    // Start is called before the first frame update
     void Awake()
     {
         originalItem = GameObject.FindGameObjectsWithTag("origins");
