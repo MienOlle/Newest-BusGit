@@ -11,6 +11,8 @@ public class gameLogic : MonoBehaviour
     public GameObject anomaly1Origin;
     public GameObject anomaly1V2Changed;
     public GameObject anomaly1Changed;
+    public GameObject anomaly2Origin;
+    public GameObject anomaly2Changed;
     bool anomaly1State;
     bool anomaly2State;
 
@@ -71,6 +73,8 @@ public class gameLogic : MonoBehaviour
     }
 
     void anomaly2(){
+        anomaly2Origin.SetActive(false);
+        anomaly2Changed.SetActive(true);
         Debug.Log("Anomaly 2 Activated");
     }
 }
