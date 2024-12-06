@@ -6,7 +6,6 @@ using UnityEngine;
 public class gameLogic : MonoBehaviour
 {
     public MonitorLogic anomalyChecker;
-    public busScript BusController;
     private GameObject[] anomalyItem;
     public GameObject anomaly1Origin;
     public GameObject anomaly1V2Changed;
@@ -55,10 +54,6 @@ public class gameLogic : MonoBehaviour
 
             numAnomaly--;
         }
-    }
-
-    public void setBusScript(bool value){
-        BusController.setBusMovement(value);
     }
 
     void anomaly1(){

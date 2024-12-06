@@ -9,6 +9,10 @@ public class busScript : MonoBehaviour
     public float defaultSpeed = 12f;
     public float changeSpeed = 2f;
 
+    public GameObject goAudio;
+    public GameObject stopAudio;
+    private Coroutine currCoroutine;
+
     public Transform[] startPoints;
     public Transform[] endPoints;
     private int currPoint = 0;
@@ -21,13 +25,10 @@ public class busScript : MonoBehaviour
     private bool isMoving = true;
 
     public Rigidbody busRigid;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    void Awake(){
+        stopAudio.SetActive(false);
+        goAudio.SetActive(true);
     }
-
-    // Update is called once per frame
     void Update()
     {
         //Move forward if not turning
@@ -80,13 +81,30 @@ public class busScript : MonoBehaviour
                 isTurning = false;
             }
         }
+    }
 
-        // if (!isTurning && Vector3.Distance(transform.position, endPoint1.position) < threshold){
-        //     isTurning = false;
-        // }
+    public void changeAudio(bool value){
+        if(currCoroutine != null){
+            StopCoroutine(currCoroutine);
+        }
+        currCoroutine = StartCoroutine(setAudio(value));
+    }
+    private IEnumerator setAudio(bool value){
+        if(!value){
+            goAudio.SetActive(value);
+            yield return new WaitForSeconds(1);
+            stopAudio.SetActive(!value);
+        }else{
+            stopAudio.SetActive(!value);
+            yield return new WaitForSeconds(1);
+            goAudio.SetActive(value);
+        }
+
+        currCoroutine = null;
     }
 
     public void setBusMovement(bool value){
         isMoving = value;
+        changeAudio(value);
     }
 }

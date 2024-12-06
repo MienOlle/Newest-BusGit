@@ -5,7 +5,8 @@ using UnityEngine;
 public class MonitorLogic : MonoBehaviour
 {
     public buttonToggleScript unselectAnom;
-    public gameLogic BusController;
+    // public gameLogic BusController;
+    public busScript BusController;
     public restartLogic LevelController;
     private bool[] anomalySelected;
     private int numAnomalyType = 3;
@@ -63,7 +64,7 @@ public class MonitorLogic : MonoBehaviour
         }
 
         //things to do after finish checking
-        BusController.setBusScript(true);                   //allow the bus to move after submission and checking
+        BusController.setBusMovement(true);                   //allow the bus to move after submission and checking
         unselectAnom.unselectButton();                      //set all anomaly selected to false
         setAllFalse(anomalyActivated, numAnomalyType);      //set all anomaly activated to false
     }

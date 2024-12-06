@@ -15,7 +15,7 @@ D:/BusStopGit/Newest-BusGit/BusStopNoCorrupt
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-63564
+63636
 -job-worker-count
 1
 -background-job-worker-count
@@ -58,12 +58,12 @@ D:/BusStopGit/Newest-BusGit/BusStopNoCorrupt
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3288] Host "[IP] 192.168.0.200 [Port] 0 [Flags] 2 [Guid] 3269276809 [EditorId] 3269276809 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UI37KU11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [3288] Host "[IP] 192.168.0.200 [Port] 0 [Flags] 2 [Guid] 3269276809 [EditorId] 3269276809 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UI37KU11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [2664] Host "[IP] 192.168.0.200 [Port] 0 [Flags] 2 [Guid] 160075212 [EditorId] 160075212 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UI37KU11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [2664] Host "[IP] 192.168.0.200 [Port] 0 [Flags] 2 [Guid] 160075212 [EditorId] 160075212 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UI37KU11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 1
 [Physics::Module] Initialized MultithreadedJobDispatcher with 1 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 49.34 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 16.18 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.10f1 (316c1fd686f6)
 [Subsystems] Discovering subsystems at path D:/Unity 2023.2.10f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity 2023.2.10f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity 2023.2.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity 2023.2.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56428
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56796
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -93,43 +93,43 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity 2023.2.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.027159 seconds.
-- Loaded All Assemblies, in  5.203 seconds
+Registered in 0.011230 seconds.
+- Loaded All Assemblies, in  4.352 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  4.322 seconds
-Domain Reload Profiling: 9534ms
-	BeginReloadAssembly (1584ms)
+- Finished resetting the current domain, in  3.120 seconds
+Domain Reload Profiling: 7465ms
+	BeginReloadAssembly (2232ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (8ms)
-	RebuildCommonClasses (890ms)
-	RebuildNativeTypeToScriptingClass (81ms)
-	initialDomainReloadingComplete (587ms)
-	LoadAllAssembliesAndSetupDomain (2059ms)
-		LoadAssemblies (1571ms)
+		CreateAndSetChildDomain (12ms)
+	RebuildCommonClasses (482ms)
+	RebuildNativeTypeToScriptingClass (71ms)
+	initialDomainReloadingComplete (338ms)
+	LoadAllAssembliesAndSetupDomain (1219ms)
+		LoadAssemblies (2228ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (2049ms)
-			TypeCache.Refresh (2038ms)
-				TypeCache.ScanAssembly (1948ms)
+		AnalyzeDomain (1188ms)
+			TypeCache.Refresh (1186ms)
+				TypeCache.ScanAssembly (1100ms)
 			BuildScriptInfoCaches (0ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (4333ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (3124ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (3756ms)
+		SetupLoadedEditorAssemblies (2669ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (47ms)
-			SetLoadedEditorAssemblies (27ms)
-			BeforeProcessingInitializeOnLoad (30ms)
-			ProcessInitializeOnLoadAttributes (3303ms)
-			ProcessInitializeOnLoadMethodAttributes (325ms)
-			AfterProcessingInitializeOnLoad (2ms)
-			EditorAssembliesLoaded (22ms)
+			InitializePlatformSupportModulesInManaged (82ms)
+			SetLoadedEditorAssemblies (63ms)
+			BeforeProcessingInitializeOnLoad (89ms)
+			ProcessInitializeOnLoadAttributes (2063ms)
+			ProcessInitializeOnLoadMethodAttributes (371ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
 ========================================================================
@@ -150,112 +150,200 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in 26.271 seconds
-Refreshing native plugins compatible for Editor in 32.48 ms, found 3 plugins.
+- Loaded All Assemblies, in  7.949 seconds
+Refreshing native plugins compatible for Editor in 1.95 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 17.763 seconds
-Domain Reload Profiling: 44204ms
-	BeginReloadAssembly (10461ms)
+- Finished resetting the current domain, in  6.255 seconds
+Domain Reload Profiling: 14201ms
+	BeginReloadAssembly (2534ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (15ms)
+		DisableScriptedObjects (34ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (139ms)
-	RebuildCommonClasses (593ms)
-	RebuildNativeTypeToScriptingClass (148ms)
-	initialDomainReloadingComplete (567ms)
-	LoadAllAssembliesAndSetupDomain (14663ms)
-		LoadAssemblies (11613ms)
+		CreateAndSetChildDomain (189ms)
+	RebuildCommonClasses (134ms)
+	RebuildNativeTypeToScriptingClass (93ms)
+	initialDomainReloadingComplete (329ms)
+	LoadAllAssembliesAndSetupDomain (4850ms)
+		LoadAssemblies (4318ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (7376ms)
-			TypeCache.Refresh (6421ms)
-				TypeCache.ScanAssembly (5900ms)
-			BuildScriptInfoCaches (473ms)
-			ResolveRequiredComponents (32ms)
-	FinalizeReload (17773ms)
+		AnalyzeDomain (1301ms)
+			TypeCache.Refresh (1167ms)
+				TypeCache.ScanAssembly (1087ms)
+			BuildScriptInfoCaches (91ms)
+			ResolveRequiredComponents (29ms)
+	FinalizeReload (6260ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (11118ms)
+		SetupLoadedEditorAssemblies (4663ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (41ms)
-			SetLoadedEditorAssemblies (32ms)
-			BeforeProcessingInitializeOnLoad (621ms)
-			ProcessInitializeOnLoadAttributes (8945ms)
-			ProcessInitializeOnLoadMethodAttributes (1462ms)
-			AfterProcessingInitializeOnLoad (14ms)
-			EditorAssembliesLoaded (3ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (97ms)
+			BeforeProcessingInitializeOnLoad (591ms)
+			ProcessInitializeOnLoadAttributes (3734ms)
+			ProcessInitializeOnLoadMethodAttributes (210ms)
+			AfterProcessingInitializeOnLoad (12ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (90ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 1.30 seconds
-Refreshing native plugins compatible for Editor in 18.10 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (39ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 95 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3246 unused Assets / (192.4 KB). Loaded Objects now: 4021.
-Memory consumption went from 155.3 MB to 155.1 MB.
-Total: 113.053500 ms (FindLiveObjects: 39.581000 ms CreateObjectMapping: 3.733800 ms MarkObjects: 58.438900 ms  DeleteObjects: 11.274200 ms)
+Unloading 3246 unused Assets / (193.1 KB). Loaded Objects now: 4021.
+Memory consumption went from 155.1 MB to 155.0 MB.
+Total: 40.223600 ms (FindLiveObjects: 1.397300 ms CreateObjectMapping: 0.760300 ms MarkObjects: 29.268600 ms  DeleteObjects: 8.792600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1249.134325 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects
-  artifactKey: Guid(1c7c831e148c4214b3501395df53d830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects using Guid(1c7c831e148c4214b3501395df53d830) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2342aebe8a9df7869b6b173ab33696b') in 0.1062152 seconds
+  Time since last request: 1766.069193 seconds.
+  path: Assets/#NVJOB Slender/Example/Environment/Scripts
+  artifactKey: Guid(928472f88c52429aa55923e6fc932ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Slender/Example/Environment/Scripts using Guid(928472f88c52429aa55923e6fc932ac5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cdceda18aa9dff7df0dd12c0f7fa21a0') in 0.0383039 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.001233 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Materials/Logo 1.mat
-  artifactKey: Guid(add7fb86cb034a9b88c59cb464edbe89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Materials/Logo 1.mat using Guid(add7fb86cb034a9b88c59cb464edbe89) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '49de207c7a20874fc96d6bcaed715831') in 2.5017825 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+  Time since last request: 0.000071 seconds.
+  path: Assets/#NVJOB Slender/Example/Environment/Scripts/TDControl.cs
+  artifactKey: Guid(04b0ca73520e418d81b55d642dfa118a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Slender/Example/Environment/Scripts/TDControl.cs using Guid(04b0ca73520e418d81b55d642dfa118a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '923785c12ac6bfacb6b427574c84aeca') in 0.0013558 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.029336 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Materials/Grass.mat
-  artifactKey: Guid(01fa885d265f42108489fbccce2f8ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Materials/Grass.mat using Guid(01fa885d265f42108489fbccce2f8ba5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b64549b23472cb134e614e9dd13489f2') in 1.2965231 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 85.202 seconds
+Refreshing native plugins compatible for Editor in 66.34 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 57.706 seconds
+Domain Reload Profiling: 143249ms
+	BeginReloadAssembly (30795ms)
+		ExecutionOrderSort (7ms)
+		DisableScriptedObjects (429ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (4ms)
+		CreateAndSetChildDomain (15581ms)
+	RebuildCommonClasses (1620ms)
+	RebuildNativeTypeToScriptingClass (931ms)
+	initialDomainReloadingComplete (1698ms)
+	LoadAllAssembliesAndSetupDomain (50494ms)
+		LoadAssemblies (38740ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (23800ms)
+			TypeCache.Refresh (5192ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (17306ms)
+			ResolveRequiredComponents (378ms)
+	FinalizeReload (57711ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (49573ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (296ms)
+			SetLoadedEditorAssemblies (275ms)
+			BeforeProcessingInitializeOnLoad (1196ms)
+			ProcessInitializeOnLoadAttributes (47368ms)
+			ProcessInitializeOnLoadMethodAttributes (426ms)
+			AfterProcessingInitializeOnLoad (7ms)
+			EditorAssembliesLoaded (5ms)
+		ExecutionOrderSort2 (3ms)
+		AwakeInstancesAfterBackupRestoration (36ms)
+Refreshing native plugins compatible for Editor in 3.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (162.2 KB). Loaded Objects now: 4023.
+Memory consumption went from 136.9 MB to 136.8 MB.
+Total: 53.873000 ms (FindLiveObjects: 25.344800 ms CreateObjectMapping: 1.927400 ms MarkObjects: 21.243800 ms  DeleteObjects: 5.350200 ms)
 
+Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002032 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Materials/Bark.mat
-  artifactKey: Guid(88b7b2d21690425b9ed4ca5f4388cf09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Materials/Bark.mat using Guid(88b7b2d21690425b9ed4ca5f4388cf09) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b2ff1d57f75d715f3a38db709337be08') in 0.2053947 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
+  Time since last request: 2714.957842 seconds.
+  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Shaders/ScreenSpaceRaytrace.cginc
+  artifactKey: Guid(d25fc23c0cfc4c3d8f52e50bd1c9a47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Shaders/ScreenSpaceRaytrace.cginc using Guid(d25fc23c0cfc4c3d8f52e50bd1c9a47a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3424f1b6a7f8a5f0f3724126050d618f') in 0.8504258 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
-Received Import Request.
-  Time since last request: 0.004098 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Materials/Grass.png
-  artifactKey: Guid(ccc0939c37fb496a976475d7a850866e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Materials/Grass.png using Guid(ccc0939c37fb496a976475d7a850866e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9737c9f27a2fef00179d400e12c06b34') in 0.1932786 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 77.426 seconds
+Refreshing native plugins compatible for Editor in 29.49 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 40.722 seconds
+Domain Reload Profiling: 118462ms
+	BeginReloadAssembly (26015ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (191ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (8ms)
+		CreateAndSetChildDomain (11891ms)
+	RebuildCommonClasses (2773ms)
+	RebuildNativeTypeToScriptingClass (371ms)
+	initialDomainReloadingComplete (2668ms)
+	LoadAllAssembliesAndSetupDomain (45834ms)
+		LoadAssemblies (41037ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16332ms)
+			TypeCache.Refresh (2861ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (12640ms)
+			ResolveRequiredComponents (244ms)
+	FinalizeReload (40801ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (27428ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (104ms)
+			SetLoadedEditorAssemblies (552ms)
+			BeforeProcessingInitializeOnLoad (3769ms)
+			ProcessInitializeOnLoadAttributes (20256ms)
+			ProcessInitializeOnLoadMethodAttributes (2661ms)
+			AfterProcessingInitializeOnLoad (78ms)
+			EditorAssembliesLoaded (8ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (308ms)
+Refreshing native plugins compatible for Editor in 88.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (150.4 KB). Loaded Objects now: 4024.
+Memory consumption went from 138.8 MB to 138.7 MB.
+Total: 371.191100 ms (FindLiveObjects: 155.236500 ms CreateObjectMapping: 24.483500 ms MarkObjects: 165.963300 ms  DeleteObjects: 25.489600 ms)
 
-========================================================================
-Received Import Request.
-  Time since last request: 31.707551 seconds.
-  path: Assets/#NVJOB Slender/Slender/Materials/Shoes.mat
-  artifactKey: Guid(482da43e4b4c49659f5071cb8673471d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Slender/Materials/Shoes.mat using Guid(482da43e4b4c49659f5071cb8673471d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e82e904283b05bb708f6c2ec1b25e0a7') in 0.3153436 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 3
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000117 seconds.
-  path: Assets/#NVJOB Slender/Slender/Materials/Suit N.png
-  artifactKey: Guid(ac338ef17ccf4962a93184bfa0ca89e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Slender/Materials/Suit N.png using Guid(ac338ef17ccf4962a93184bfa0ca89e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2d5dbc7dd7496b49f4d48b874e1ddaf4') in 1.2245918 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
-AssetImportWorker is now disconnected from the server
-Process exiting
-Exiting without the bug reporter. Application will terminate with return code 0
+Prepare: number of updated asset objects reloaded= 0

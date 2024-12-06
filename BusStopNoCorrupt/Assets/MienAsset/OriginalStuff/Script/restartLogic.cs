@@ -5,7 +5,7 @@ using UnityEngine;
 public class restartLogic : MonoBehaviour
 {
     public buttonToggleScript toggleSubmit;
-    public gameLogic BusController;
+    public busScript BusController;
     private gameLogic restartScript;
     private GameObject[] originalItem;
     private GameObject[] anomalyItem;
@@ -23,7 +23,7 @@ public class restartLogic : MonoBehaviour
         if(gameState.CompareTag("endGame") && EndHit){
             EndHit = false;
             toggleSubmit.submitInteractable(true);
-            BusController.setBusScript(false);
+            BusController.setBusMovement(false);
             ReturnOriginal();
         }else if(gameState.CompareTag("startGame") && !EndHit){
             EndHit = true;
@@ -35,12 +35,12 @@ public class restartLogic : MonoBehaviour
     private void ReturnOriginal(){
         Debug.Log("The level is restarted");
         foreach(GameObject org in originalItem){
-            Debug.Log("Object " + org + " Activated");
+            // Debug.Log("Object " + org + " Activated");
             org.SetActive(true);
         }
 
         foreach(GameObject anom in anomalyItem){
-            Debug.Log("Object " + anom + " Inactivated");
+            // Debug.Log("Object " + anom + " Inactivated");
             anom.SetActive(false);
         }
     }
