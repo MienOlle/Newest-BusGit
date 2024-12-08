@@ -15,7 +15,7 @@ D:/BusStopGit/Newest-BusGit/BusStopNoCorrupt
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63636
+52100
 -job-worker-count
 1
 -background-job-worker-count
@@ -58,12 +58,12 @@ D:/BusStopGit/Newest-BusGit/BusStopNoCorrupt
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [1384] Host "[IP] 192.168.0.200 [Port] 0 [Flags] 2 [Guid] 847017630 [EditorId] 847017630 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UI37KU11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [1384] Host "[IP] 192.168.0.200 [Port] 0 [Flags] 2 [Guid] 847017630 [EditorId] 847017630 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UI37KU11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [5304] Host "[IP] 127.0.2.2 [Port] 0 [Flags] 2 [Guid] 1853927220 [EditorId] 1853927220 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UI37KU11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [5304] Host "[IP] 127.0.2.2 [Port] 0 [Flags] 2 [Guid] 1853927220 [EditorId] 1853927220 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UI37KU11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 1
 [Physics::Module] Initialized MultithreadedJobDispatcher with 1 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 17.30 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 20.44 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.10f1 (316c1fd686f6)
 [Subsystems] Discovering subsystems at path D:/Unity 2023.2.10f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity 2023.2.10f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity 2023.2.10f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity 2023.2.10f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56788
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -93,45 +93,45 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity 2023.2.10f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.014075 seconds.
-- Loaded All Assemblies, in  4.198 seconds
+Registered in 0.013233 seconds.
+- Loaded All Assemblies, in  7.157 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  2.832 seconds
-Domain Reload Profiling: 7029ms
-	BeginReloadAssembly (2256ms)
+- Finished resetting the current domain, in  5.218 seconds
+Domain Reload Profiling: 12369ms
+	BeginReloadAssembly (3456ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (7ms)
-	RebuildCommonClasses (467ms)
-	RebuildNativeTypeToScriptingClass (84ms)
-	initialDomainReloadingComplete (258ms)
-	LoadAllAssembliesAndSetupDomain (1123ms)
-		LoadAssemblies (2255ms)
+		CreateAndSetChildDomain (9ms)
+	RebuildCommonClasses (412ms)
+	RebuildNativeTypeToScriptingClass (107ms)
+	initialDomainReloadingComplete (758ms)
+	LoadAllAssembliesAndSetupDomain (2417ms)
+		LoadAssemblies (3458ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1104ms)
-			TypeCache.Refresh (1100ms)
-				TypeCache.ScanAssembly (987ms)
-			BuildScriptInfoCaches (1ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (2841ms)
+		AnalyzeDomain (2385ms)
+			TypeCache.Refresh (2376ms)
+				TypeCache.ScanAssembly (2162ms)
+			BuildScriptInfoCaches (4ms)
+			ResolveRequiredComponents (2ms)
+	FinalizeReload (5219ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2466ms)
+		SetupLoadedEditorAssemblies (3911ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (60ms)
-			SetLoadedEditorAssemblies (28ms)
-			BeforeProcessingInitializeOnLoad (90ms)
-			ProcessInitializeOnLoadAttributes (1683ms)
-			ProcessInitializeOnLoadMethodAttributes (602ms)
+			InitializePlatformSupportModulesInManaged (137ms)
+			SetLoadedEditorAssemblies (109ms)
+			BeforeProcessingInitializeOnLoad (144ms)
+			ProcessInitializeOnLoadAttributes (2539ms)
+			ProcessInitializeOnLoadMethodAttributes (980ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (1ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (0ms)
+		AwakeInstancesAfterBackupRestoration (1ms)
 ========================================================================
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
@@ -150,69 +150,93 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  8.098 seconds
-Refreshing native plugins compatible for Editor in 18.63 ms, found 3 plugins.
+- Loaded All Assemblies, in  6.729 seconds
+Refreshing native plugins compatible for Editor in 2.86 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Failed to launch server process. Reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] Unable to send message (not connected to server process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  6.427 seconds
-Domain Reload Profiling: 14524ms
-	BeginReloadAssembly (2679ms)
+- Finished resetting the current domain, in  2.756 seconds
+Domain Reload Profiling: 9478ms
+	BeginReloadAssembly (2735ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (30ms)
+		DisableScriptedObjects (7ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (351ms)
-	RebuildCommonClasses (177ms)
-	RebuildNativeTypeToScriptingClass (22ms)
-	initialDomainReloadingComplete (134ms)
-	LoadAllAssembliesAndSetupDomain (5077ms)
-		LoadAssemblies (4275ms)
+		CreateAndSetChildDomain (341ms)
+	RebuildCommonClasses (115ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (121ms)
+	LoadAllAssembliesAndSetupDomain (3717ms)
+		LoadAssemblies (3430ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (1774ms)
-			TypeCache.Refresh (1641ms)
-				TypeCache.ScanAssembly (1555ms)
-			BuildScriptInfoCaches (92ms)
-			ResolveRequiredComponents (28ms)
-	FinalizeReload (6435ms)
+		AnalyzeDomain (971ms)
+			TypeCache.Refresh (888ms)
+				TypeCache.ScanAssembly (783ms)
+			BuildScriptInfoCaches (66ms)
+			ResolveRequiredComponents (10ms)
+	FinalizeReload (2758ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (5360ms)
+		SetupLoadedEditorAssemblies (2265ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (22ms)
-			SetLoadedEditorAssemblies (37ms)
-			BeforeProcessingInitializeOnLoad (241ms)
-			ProcessInitializeOnLoadAttributes (4846ms)
-			ProcessInitializeOnLoadMethodAttributes (207ms)
-			AfterProcessingInitializeOnLoad (3ms)
-			EditorAssembliesLoaded (3ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (328ms)
+			ProcessInitializeOnLoadAttributes (1797ms)
+			ProcessInitializeOnLoadMethodAttributes (118ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (44ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 3.40 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (26ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.30 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 95 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3246 unused Assets / (1.0 MB). Loaded Objects now: 4021.
-Memory consumption went from 155.2 MB to 154.2 MB.
-Total: 55.701900 ms (FindLiveObjects: 1.578300 ms CreateObjectMapping: 5.839900 ms MarkObjects: 36.816400 ms  DeleteObjects: 11.462400 ms)
+Unloading 3246 unused Assets / (1.4 MB). Loaded Objects now: 4021.
+Memory consumption went from 155.3 MB to 153.9 MB.
+Total: 20.963400 ms (FindLiveObjects: 1.888900 ms CreateObjectMapping: 0.572600 ms MarkObjects: 14.143500 ms  DeleteObjects: 4.353600 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 1766.094823 seconds.
-  path: Assets/#NVJOB Slender/Slender/Materials
-  artifactKey: Guid(094a405f417845a38aa250b1c602191c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Slender/Materials using Guid(094a405f417845a38aa250b1c602191c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '244b4e12aeaa5af076e3d30b376074c6') in 0.0200431 seconds
+  Time since last request: 13087.982627 seconds.
+  path: Assets/MienAsset/OriginalStuff/Sounds
+  artifactKey: Guid(f99065ac736fa644581e37cce38a3e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MienAsset/OriginalStuff/Sounds using Guid(f99065ac736fa644581e37cce38a3e8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8595c3af5cf9fb0de6228219e951e33a') in 0.0363455 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.352129 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Scripts/SlenderExample.cs
-  artifactKey: Guid(4c849229eea847799633af02d5a21643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Scripts/SlenderExample.cs using Guid(4c849229eea847799633af02d5a21643) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c0dd9df821ab5ed9baf469048b9b883b') in 0.0009947 seconds
+  Time since last request: 77.771190 seconds.
+  path: Assets/MienAsset/OriginalStuff/Sounds/bus-engine-47297.mp3
+  artifactKey: Guid(7ed8c9ff89ec9a4439912bd7b4457dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MienAsset/OriginalStuff/Sounds/bus-engine-47297.mp3 using Guid(7ed8c9ff89ec9a4439912bd7b4457dd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3c75c73fe9b2a3d42ecc76603c228f92') in 3.1602487 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000454 seconds.
+  path: Assets/MienAsset/OriginalStuff/Sounds/bus-stop-16865.mp3
+  artifactKey: Guid(f3a86d8055d1c58458a4f361f0c48399) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MienAsset/OriginalStuff/Sounds/bus-stop-16865.mp3 using Guid(f3a86d8055d1c58458a4f361f0c48399) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'cee014efcb87ebdfc53cd7e2268cea62') in 0.0195121 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000112 seconds.
+  path: Assets/MienAsset/OriginalStuff/Sounds/inside-bus-67286.mp3
+  artifactKey: Guid(2afdd37fbc975ab4483aa2d26c3da52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MienAsset/OriginalStuff/Sounds/inside-bus-67286.mp3 using Guid(2afdd37fbc975ab4483aa2d26c3da52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8789596a7dd8c5f79d9a5ca8b0f1ed03') in 0.0201368 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 425.440885 seconds.
+  path: Assets/MienAsset/OriginalStuff/Script/busScript.cs
+  artifactKey: Guid(703a11eddf3a541488898ede6a15d5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MienAsset/OriginalStuff/Script/busScript.cs using Guid(703a11eddf3a541488898ede6a15d5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '044209fa0e3cf20d567f3d3edcecf50f') in 0.1185781 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
@@ -232,114 +256,120 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in 85.157 seconds
-Refreshing native plugins compatible for Editor in 20.97 ms, found 3 plugins.
+- Loaded All Assemblies, in 64.489 seconds
+Refreshing native plugins compatible for Editor in 5.25 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 57.500 seconds
-Domain Reload Profiling: 142820ms
-	BeginReloadAssembly (30646ms)
-		ExecutionOrderSort (3ms)
-		DisableScriptedObjects (1111ms)
+- Finished resetting the current domain, in  7.894 seconds
+Domain Reload Profiling: 72429ms
+	BeginReloadAssembly (48374ms)
+		ExecutionOrderSort (11ms)
+		DisableScriptedObjects (1847ms)
 		BackupInstance (0ms)
-		ReleaseScriptingObjects (7ms)
-		CreateAndSetChildDomain (15300ms)
-	RebuildCommonClasses (1763ms)
-	RebuildNativeTypeToScriptingClass (1187ms)
-	initialDomainReloadingComplete (1399ms)
-	LoadAllAssembliesAndSetupDomain (50321ms)
-		LoadAssemblies (38698ms)
+		ReleaseScriptingObjects (15ms)
+		CreateAndSetChildDomain (36745ms)
+	RebuildCommonClasses (205ms)
+	RebuildNativeTypeToScriptingClass (147ms)
+	initialDomainReloadingComplete (365ms)
+	LoadAllAssembliesAndSetupDomain (15435ms)
+		LoadAssemblies (11612ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (23997ms)
-			TypeCache.Refresh (2678ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (20096ms)
-			ResolveRequiredComponents (369ms)
-	FinalizeReload (57503ms)
+		AnalyzeDomain (6688ms)
+			TypeCache.Refresh (2241ms)
+				TypeCache.ScanAssembly (620ms)
+			BuildScriptInfoCaches (2710ms)
+			ResolveRequiredComponents (28ms)
+	FinalizeReload (7902ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (48668ms)
-			LogAssemblyErrors (1ms)
-			InitializePlatformSupportModulesInManaged (202ms)
-			SetLoadedEditorAssemblies (290ms)
-			BeforeProcessingInitializeOnLoad (7174ms)
-			ProcessInitializeOnLoadAttributes (40573ms)
-			ProcessInitializeOnLoadMethodAttributes (419ms)
-			AfterProcessingInitializeOnLoad (6ms)
-			EditorAssembliesLoaded (3ms)
-		ExecutionOrderSort2 (1ms)
-		AwakeInstancesAfterBackupRestoration (40ms)
-Refreshing native plugins compatible for Editor in 2.96 ms, found 3 plugins.
+		SetupLoadedEditorAssemblies (6035ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (59ms)
+			SetLoadedEditorAssemblies (23ms)
+			BeforeProcessingInitializeOnLoad (278ms)
+			ProcessInitializeOnLoadAttributes (3325ms)
+			ProcessInitializeOnLoadMethodAttributes (2341ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (59ms)
+Refreshing native plugins compatible for Editor in 51.33 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3254 unused Assets / (161.3 KB). Loaded Objects now: 4023.
-Memory consumption went from 137.0 MB to 136.8 MB.
-Total: 57.216900 ms (FindLiveObjects: 30.455000 ms CreateObjectMapping: 1.378900 ms MarkObjects: 19.844700 ms  DeleteObjects: 5.533200 ms)
+Unloading 3254 unused Assets / (159.5 KB). Loaded Objects now: 4032.
+Memory consumption went from 137.2 MB to 137.1 MB.
+Total: 1761.110800 ms (FindLiveObjects: 1574.701400 ms CreateObjectMapping: 11.806800 ms MarkObjects: 160.121700 ms  DeleteObjects: 13.844300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 24.628 seconds
+Refreshing native plugins compatible for Editor in 3.19 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  5.684 seconds
+Domain Reload Profiling: 30525ms
+	BeginReloadAssembly (3004ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (301ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (4ms)
+		CreateAndSetChildDomain (1203ms)
+	RebuildCommonClasses (207ms)
+	RebuildNativeTypeToScriptingClass (41ms)
+	initialDomainReloadingComplete (141ms)
+	LoadAllAssembliesAndSetupDomain (21444ms)
+		LoadAssemblies (5776ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16553ms)
+			TypeCache.Refresh (77ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (15159ms)
+			ResolveRequiredComponents (57ms)
+	FinalizeReload (5687ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (4153ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (769ms)
+			BeforeProcessingInitializeOnLoad (286ms)
+			ProcessInitializeOnLoadAttributes (2774ms)
+			ProcessInitializeOnLoadMethodAttributes (289ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (58ms)
+Refreshing native plugins compatible for Editor in 6.15 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (245.7 KB). Loaded Objects now: 4032.
+Memory consumption went from 139.1 MB to 138.9 MB.
+Total: 80.081800 ms (FindLiveObjects: 6.999800 ms CreateObjectMapping: 1.202100 ms MarkObjects: 61.805400 ms  DeleteObjects: 9.950600 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 ========================================================================
 Received Import Request.
-  Time since last request: 2583.515693 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects
-  artifactKey: Guid(7d75e9b62a1e44c8805ab51342b2c8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects using Guid(7d75e9b62a1e44c8805ab51342b2c8a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '77ea5fc9413b0aea442365984c2646aa') in 0.5520288 seconds
+  Time since last request: 844.692881 seconds.
+  path: Assets/MienAsset/OriginalStuff/Script/busScript.cs
+  artifactKey: Guid(703a11eddf3a541488898ede6a15d5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/MienAsset/OriginalStuff/Script/busScript.cs using Guid(703a11eddf3a541488898ede6a15d5f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '457e1d1bde95955bc6337ff86196c9f7') in 0.6447076 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 2.466014 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Textures
-  artifactKey: Guid(5f39908f1f4e44acbf8a87000c67118a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Textures using Guid(5f39908f1f4e44acbf8a87000c67118a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '87cf89a69daa7213df5093ebc8b8f0bf') in 0.011922 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.801845 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs
-  artifactKey: Guid(4bf40dc361d241f6b0ce012df6440928) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Scripts/DepthOfField.cs using Guid(4bf40dc361d241f6b0ce012df6440928) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c1829297a30333a0110362a6dd38290f') in 0.0041918 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.068029 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Textures/HexShape.psd
-  artifactKey: Guid(7251702aa6bb4f4fb19ff470fda37a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Textures/HexShape.psd using Guid(7251702aa6bb4f4fb19ff470fda37a37) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1470d12f0e5dcef7074501e8724ddcc7') in 1.5870208 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 3.430642 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs
-  artifactKey: Guid(c5d8cc3f712c4cd5833720b861c1c461) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Scripts/DepthOfFieldDeprecated.cs using Guid(c5d8cc3f712c4cd5833720b861c1c461) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a57545e736142e13bd89a057323dce1b') in 0.0025734 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.039406 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Textures/SphereShape.psd
-  artifactKey: Guid(e0a7e37c03cc4ce0b0700850f9fdcf45) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Textures/SphereShape.psd using Guid(e0a7e37c03cc4ce0b0700850f9fdcf45) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9ec52f143d922ee5ddac17f7b212493f') in 0.0132741 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.223676 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Scripts/EdgeDetection.cs
-  artifactKey: Guid(a9aba16ed7984954aa37f8084098130e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Scripts/EdgeDetection.cs using Guid(a9aba16ed7984954aa37f8084098130e) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'fcf508dfbd1034479f78a1f7ec8284eb') in 0.0050467 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 69.461664 seconds.
-  path: Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Shaders/frag_ao.cginc
-  artifactKey: Guid(1717f602e66f491783eefd96b5e7a5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/#NVJOB Slender/Example/Environment/Standard Assets/Effects/ImageEffects/Shaders/frag_ao.cginc using Guid(1717f602e66f491783eefd96b5e7a5f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '727dfe62fcf779de735eff177349f733') in 0.0092965 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Prepare
@@ -358,48 +388,1102 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in 78.184 seconds
-Refreshing native plugins compatible for Editor in 20.27 ms, found 3 plugins.
+- Loaded All Assemblies, in 18.898 seconds
+Refreshing native plugins compatible for Editor in 8.80 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in 40.362 seconds
-Domain Reload Profiling: 118921ms
-	BeginReloadAssembly (24036ms)
+- Finished resetting the current domain, in  9.955 seconds
+Domain Reload Profiling: 28887ms
+	BeginReloadAssembly (6771ms)
 		ExecutionOrderSort (1ms)
-		DisableScriptedObjects (146ms)
+		DisableScriptedObjects (150ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (6ms)
-		CreateAndSetChildDomain (10031ms)
-	RebuildCommonClasses (2141ms)
-	RebuildNativeTypeToScriptingClass (379ms)
-	initialDomainReloadingComplete (2580ms)
-	LoadAllAssembliesAndSetupDomain (49363ms)
-		LoadAssemblies (43578ms)
+		CreateAndSetChildDomain (4769ms)
+	RebuildCommonClasses (451ms)
+	RebuildNativeTypeToScriptingClass (63ms)
+	initialDomainReloadingComplete (267ms)
+	LoadAllAssembliesAndSetupDomain (11370ms)
+		LoadAssemblies (10618ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (17062ms)
-			TypeCache.Refresh (3082ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (13079ms)
-			ResolveRequiredComponents (137ms)
-	FinalizeReload (40421ms)
+		AnalyzeDomain (1709ms)
+			TypeCache.Refresh (270ms)
+				TypeCache.ScanAssembly (29ms)
+			BuildScriptInfoCaches (1365ms)
+			ResolveRequiredComponents (20ms)
+	FinalizeReload (9965ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (27431ms)
+		SetupLoadedEditorAssemblies (8016ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (73ms)
-			SetLoadedEditorAssemblies (352ms)
-			BeforeProcessingInitializeOnLoad (4129ms)
-			ProcessInitializeOnLoadAttributes (20118ms)
-			ProcessInitializeOnLoadMethodAttributes (2717ms)
-			AfterProcessingInitializeOnLoad (38ms)
-			EditorAssembliesLoaded (3ms)
-		ExecutionOrderSort2 (1ms)
-		AwakeInstancesAfterBackupRestoration (379ms)
-Refreshing native plugins compatible for Editor in 91.95 ms, found 3 plugins.
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (1837ms)
+			ProcessInitializeOnLoadAttributes (5745ms)
+			ProcessInitializeOnLoadMethodAttributes (405ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (26ms)
+Refreshing native plugins compatible for Editor in 2.35 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3254 unused Assets / (150.4 KB). Loaded Objects now: 4026.
-Memory consumption went from 138.9 MB to 138.8 MB.
-Total: 361.881500 ms (FindLiveObjects: 137.949000 ms CreateObjectMapping: 11.825000 ms MarkObjects: 180.736800 ms  DeleteObjects: 31.360500 ms)
+Unloading 3254 unused Assets / (0.6 MB). Loaded Objects now: 4032.
+Memory consumption went from 141.1 MB to 140.5 MB.
+Total: 93.196700 ms (FindLiveObjects: 5.644800 ms CreateObjectMapping: 0.611500 ms MarkObjects: 73.549200 ms  DeleteObjects: 13.385900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 109.926 seconds
+Refreshing native plugins compatible for Editor in 3.74 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  8.538 seconds
+Domain Reload Profiling: 118536ms
+	BeginReloadAssembly (55938ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (2650ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (47ms)
+		CreateAndSetChildDomain (20308ms)
+	RebuildCommonClasses (397ms)
+	RebuildNativeTypeToScriptingClass (498ms)
+	initialDomainReloadingComplete (1539ms)
+	LoadAllAssembliesAndSetupDomain (51625ms)
+		LoadAssemblies (59284ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (17215ms)
+			TypeCache.Refresh (3205ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (13707ms)
+			ResolveRequiredComponents (67ms)
+	FinalizeReload (8540ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5887ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (77ms)
+			SetLoadedEditorAssemblies (614ms)
+			BeforeProcessingInitializeOnLoad (163ms)
+			ProcessInitializeOnLoadAttributes (4638ms)
+			ProcessInitializeOnLoadMethodAttributes (387ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (27ms)
+Refreshing native plugins compatible for Editor in 17.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (284.2 KB). Loaded Objects now: 4032.
+Memory consumption went from 143.0 MB to 142.7 MB.
+Total: 70.476900 ms (FindLiveObjects: 6.102000 ms CreateObjectMapping: 1.797600 ms MarkObjects: 57.874300 ms  DeleteObjects: 4.696500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 118.135 seconds
+Refreshing native plugins compatible for Editor in 3.90 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  9.196 seconds
+Domain Reload Profiling: 128407ms
+	BeginReloadAssembly (41781ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (379ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (6ms)
+		CreateAndSetChildDomain (20664ms)
+	RebuildCommonClasses (4035ms)
+	RebuildNativeTypeToScriptingClass (734ms)
+	initialDomainReloadingComplete (4192ms)
+	LoadAllAssembliesAndSetupDomain (68431ms)
+		LoadAssemblies (47873ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (28375ms)
+			TypeCache.Refresh (4975ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (20581ms)
+			ResolveRequiredComponents (766ms)
+	FinalizeReload (9234ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6892ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (23ms)
+			SetLoadedEditorAssemblies (60ms)
+			BeforeProcessingInitializeOnLoad (464ms)
+			ProcessInitializeOnLoadAttributes (5872ms)
+			ProcessInitializeOnLoadMethodAttributes (462ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (4ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (35ms)
+Refreshing native plugins compatible for Editor in 70.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (207.2 KB). Loaded Objects now: 4032.
+Memory consumption went from 145.0 MB to 144.8 MB.
+Total: 3766.797000 ms (FindLiveObjects: 2008.537600 ms CreateObjectMapping: 5.803900 ms MarkObjects: 1715.657200 ms  DeleteObjects: 36.047200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 84.585 seconds
+Refreshing native plugins compatible for Editor in 63.45 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 32.420 seconds
+Domain Reload Profiling: 117198ms
+	BeginReloadAssembly (34599ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (207ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (8ms)
+		CreateAndSetChildDomain (18291ms)
+	RebuildCommonClasses (1304ms)
+	RebuildNativeTypeToScriptingClass (598ms)
+	initialDomainReloadingComplete (1178ms)
+	LoadAllAssembliesAndSetupDomain (47038ms)
+		LoadAssemblies (43301ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (16330ms)
+			TypeCache.Refresh (2917ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (11850ms)
+			ResolveRequiredComponents (91ms)
+	FinalizeReload (32481ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (16696ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (162ms)
+			SetLoadedEditorAssemblies (272ms)
+			BeforeProcessingInitializeOnLoad (4170ms)
+			ProcessInitializeOnLoadAttributes (8650ms)
+			ProcessInitializeOnLoadMethodAttributes (3093ms)
+			AfterProcessingInitializeOnLoad (68ms)
+			EditorAssembliesLoaded (279ms)
+		ExecutionOrderSort2 (1ms)
+		AwakeInstancesAfterBackupRestoration (415ms)
+Refreshing native plugins compatible for Editor in 10.64 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (212.2 KB). Loaded Objects now: 4032.
+Memory consumption went from 146.9 MB to 146.7 MB.
+Total: 1079.545400 ms (FindLiveObjects: 50.791200 ms CreateObjectMapping: 2.894100 ms MarkObjects: 1009.045000 ms  DeleteObjects: 16.807300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 26.281 seconds
+Refreshing native plugins compatible for Editor in 7.74 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  8.167 seconds
+Domain Reload Profiling: 34486ms
+	BeginReloadAssembly (12466ms)
+		ExecutionOrderSort (3ms)
+		DisableScriptedObjects (371ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (10ms)
+		CreateAndSetChildDomain (5374ms)
+	RebuildCommonClasses (2358ms)
+	RebuildNativeTypeToScriptingClass (1094ms)
+	initialDomainReloadingComplete (1769ms)
+	LoadAllAssembliesAndSetupDomain (8630ms)
+		LoadAssemblies (9383ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (4134ms)
+			TypeCache.Refresh (1523ms)
+				TypeCache.ScanAssembly (71ms)
+			BuildScriptInfoCaches (2532ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (8169ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6150ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (14ms)
+			SetLoadedEditorAssemblies (24ms)
+			BeforeProcessingInitializeOnLoad (1027ms)
+			ProcessInitializeOnLoadAttributes (4701ms)
+			ProcessInitializeOnLoadMethodAttributes (363ms)
+			AfterProcessingInitializeOnLoad (20ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (135ms)
+Refreshing native plugins compatible for Editor in 11.17 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (283.6 KB). Loaded Objects now: 4032.
+Memory consumption went from 148.8 MB to 148.5 MB.
+Total: 59.861000 ms (FindLiveObjects: 3.787600 ms CreateObjectMapping: 0.818300 ms MarkObjects: 50.568500 ms  DeleteObjects: 4.679200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 84.646 seconds
+Refreshing native plugins compatible for Editor in 110.89 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 25.752 seconds
+Domain Reload Profiling: 110840ms
+	BeginReloadAssembly (22705ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (165ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (4311ms)
+	RebuildCommonClasses (2880ms)
+	RebuildNativeTypeToScriptingClass (229ms)
+	initialDomainReloadingComplete (8619ms)
+	LoadAllAssembliesAndSetupDomain (50582ms)
+		LoadAssemblies (45379ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (19481ms)
+			TypeCache.Refresh (3596ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (15476ms)
+			ResolveRequiredComponents (56ms)
+	FinalizeReload (25824ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (18170ms)
+			LogAssemblyErrors (2ms)
+			InitializePlatformSupportModulesInManaged (55ms)
+			SetLoadedEditorAssemblies (283ms)
+			BeforeProcessingInitializeOnLoad (866ms)
+			ProcessInitializeOnLoadAttributes (15709ms)
+			ProcessInitializeOnLoadMethodAttributes (1170ms)
+			AfterProcessingInitializeOnLoad (79ms)
+			EditorAssembliesLoaded (7ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (173ms)
+Refreshing native plugins compatible for Editor in 15.18 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (150.5 KB). Loaded Objects now: 4032.
+Memory consumption went from 150.7 MB to 150.6 MB.
+Total: 765.160200 ms (FindLiveObjects: 51.421200 ms CreateObjectMapping: 25.411900 ms MarkObjects: 653.841000 ms  DeleteObjects: 34.245700 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 11.705 seconds
+Refreshing native plugins compatible for Editor in 6.93 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  6.701 seconds
+Domain Reload Profiling: 18451ms
+	BeginReloadAssembly (4194ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (201ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (7ms)
+		CreateAndSetChildDomain (1896ms)
+	RebuildCommonClasses (103ms)
+	RebuildNativeTypeToScriptingClass (21ms)
+	initialDomainReloadingComplete (59ms)
+	LoadAllAssembliesAndSetupDomain (7366ms)
+		LoadAssemblies (5307ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (2901ms)
+			TypeCache.Refresh (665ms)
+				TypeCache.ScanAssembly (21ms)
+			BuildScriptInfoCaches (2142ms)
+			ResolveRequiredComponents (17ms)
+	FinalizeReload (6707ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (5173ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (49ms)
+			SetLoadedEditorAssemblies (59ms)
+			BeforeProcessingInitializeOnLoad (422ms)
+			ProcessInitializeOnLoadAttributes (4323ms)
+			ProcessInitializeOnLoadMethodAttributes (313ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (2ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (29ms)
+Refreshing native plugins compatible for Editor in 5.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (0.7 MB). Loaded Objects now: 4032.
+Memory consumption went from 152.7 MB to 152.0 MB.
+Total: 39.946800 ms (FindLiveObjects: 3.001000 ms CreateObjectMapping: 0.461100 ms MarkObjects: 29.176800 ms  DeleteObjects: 7.303000 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 28.578 seconds
+Refreshing native plugins compatible for Editor in 12.13 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  8.524 seconds
+Domain Reload Profiling: 37056ms
+	BeginReloadAssembly (8985ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (109ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (7ms)
+		CreateAndSetChildDomain (5334ms)
+	RebuildCommonClasses (254ms)
+	RebuildNativeTypeToScriptingClass (74ms)
+	initialDomainReloadingComplete (600ms)
+	LoadAllAssembliesAndSetupDomain (18616ms)
+		LoadAssemblies (14777ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (6437ms)
+			TypeCache.Refresh (1302ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (4583ms)
+			ResolveRequiredComponents (105ms)
+	FinalizeReload (8528ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6018ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (122ms)
+			SetLoadedEditorAssemblies (81ms)
+			BeforeProcessingInitializeOnLoad (426ms)
+			ProcessInitializeOnLoadAttributes (4883ms)
+			ProcessInitializeOnLoadMethodAttributes (492ms)
+			AfterProcessingInitializeOnLoad (13ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (69ms)
+Refreshing native plugins compatible for Editor in 27.61 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (150.4 KB). Loaded Objects now: 4032.
+Memory consumption went from 154.6 MB to 154.4 MB.
+Total: 915.673700 ms (FindLiveObjects: 567.647100 ms CreateObjectMapping: 168.749800 ms MarkObjects: 171.205000 ms  DeleteObjects: 7.476600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  9.816 seconds
+Refreshing native plugins compatible for Editor in 4.76 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.483 seconds
+Domain Reload Profiling: 12314ms
+	BeginReloadAssembly (4108ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (314ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (12ms)
+		CreateAndSetChildDomain (1707ms)
+	RebuildCommonClasses (96ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (112ms)
+	LoadAllAssembliesAndSetupDomain (5484ms)
+		LoadAssemblies (5339ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1208ms)
+			TypeCache.Refresh (405ms)
+				TypeCache.ScanAssembly (81ms)
+			BuildScriptInfoCaches (754ms)
+			ResolveRequiredComponents (9ms)
+	FinalizeReload (2485ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1803ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (4ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (156ms)
+			ProcessInitializeOnLoadAttributes (1453ms)
+			ProcessInitializeOnLoadMethodAttributes (174ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (23ms)
+Refreshing native plugins compatible for Editor in 3.80 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (511.3 KB). Loaded Objects now: 4032.
+Memory consumption went from 156.5 MB to 156.0 MB.
+Total: 27.613700 ms (FindLiveObjects: 2.839700 ms CreateObjectMapping: 0.759700 ms MarkObjects: 19.768100 ms  DeleteObjects: 3.938600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 41.821 seconds
+Refreshing native plugins compatible for Editor in 5.26 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 16.654 seconds
+Domain Reload Profiling: 58829ms
+	BeginReloadAssembly (12653ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (202ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (3ms)
+		CreateAndSetChildDomain (5807ms)
+	RebuildCommonClasses (3201ms)
+	RebuildNativeTypeToScriptingClass (1013ms)
+	initialDomainReloadingComplete (149ms)
+	LoadAllAssembliesAndSetupDomain (25123ms)
+		LoadAssemblies (22572ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8429ms)
+			TypeCache.Refresh (386ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (7698ms)
+			ResolveRequiredComponents (45ms)
+	FinalizeReload (16690ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (12790ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (26ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (11403ms)
+			ProcessInitializeOnLoadMethodAttributes (1085ms)
+			AfterProcessingInitializeOnLoad (112ms)
+			EditorAssembliesLoaded (45ms)
+		ExecutionOrderSort2 (5ms)
+		AwakeInstancesAfterBackupRestoration (613ms)
+Refreshing native plugins compatible for Editor in 21.87 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (150.4 KB). Loaded Objects now: 4032.
+Memory consumption went from 158.4 MB to 158.3 MB.
+Total: 797.742700 ms (FindLiveObjects: 53.891400 ms CreateObjectMapping: 20.685100 ms MarkObjects: 703.860600 ms  DeleteObjects: 19.195800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 52.593 seconds
+Refreshing native plugins compatible for Editor in 12.29 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 28.011 seconds
+Domain Reload Profiling: 80983ms
+	BeginReloadAssembly (15891ms)
+		ExecutionOrderSort (3ms)
+		DisableScriptedObjects (154ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (22ms)
+		CreateAndSetChildDomain (6281ms)
+	RebuildCommonClasses (938ms)
+	RebuildNativeTypeToScriptingClass (415ms)
+	initialDomainReloadingComplete (2351ms)
+	LoadAllAssembliesAndSetupDomain (33361ms)
+		LoadAssemblies (29512ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11962ms)
+			TypeCache.Refresh (3127ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (8340ms)
+			ResolveRequiredComponents (74ms)
+	FinalizeReload (28028ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (22552ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (30ms)
+			BeforeProcessingInitializeOnLoad (3502ms)
+			ProcessInitializeOnLoadAttributes (16780ms)
+			ProcessInitializeOnLoadMethodAttributes (2184ms)
+			AfterProcessingInitializeOnLoad (25ms)
+			EditorAssembliesLoaded (11ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (333ms)
+Refreshing native plugins compatible for Editor in 24.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (190.4 KB). Loaded Objects now: 4032.
+Memory consumption went from 160.4 MB to 160.2 MB.
+Total: 1379.273200 ms (FindLiveObjects: 150.918900 ms CreateObjectMapping: 8.032500 ms MarkObjects: 1198.629400 ms  DeleteObjects: 21.071400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 54.465 seconds
+Refreshing native plugins compatible for Editor in 9.67 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 27.368 seconds
+Domain Reload Profiling: 81956ms
+	BeginReloadAssembly (13710ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (198ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (5ms)
+		CreateAndSetChildDomain (4901ms)
+	RebuildCommonClasses (1110ms)
+	RebuildNativeTypeToScriptingClass (712ms)
+	initialDomainReloadingComplete (4449ms)
+	LoadAllAssembliesAndSetupDomain (34603ms)
+		LoadAssemblies (30605ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (11571ms)
+			TypeCache.Refresh (425ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (10550ms)
+			ResolveRequiredComponents (106ms)
+	FinalizeReload (27372ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (22878ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (66ms)
+			SetLoadedEditorAssemblies (173ms)
+			BeforeProcessingInitializeOnLoad (1096ms)
+			ProcessInitializeOnLoadAttributes (19841ms)
+			ProcessInitializeOnLoadMethodAttributes (1674ms)
+			AfterProcessingInitializeOnLoad (22ms)
+			EditorAssembliesLoaded (5ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (582ms)
+Refreshing native plugins compatible for Editor in 12.22 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (502.2 KB). Loaded Objects now: 4032.
+Memory consumption went from 162.3 MB to 161.8 MB.
+Total: 204.327200 ms (FindLiveObjects: 124.818600 ms CreateObjectMapping: 12.123200 ms MarkObjects: 53.705400 ms  DeleteObjects: 13.673900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 17.305 seconds
+Refreshing native plugins compatible for Editor in 7.68 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.019 seconds
+Domain Reload Profiling: 19343ms
+	BeginReloadAssembly (12109ms)
+		ExecutionOrderSort (2ms)
+		DisableScriptedObjects (736ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (38ms)
+		CreateAndSetChildDomain (6955ms)
+	RebuildCommonClasses (101ms)
+	RebuildNativeTypeToScriptingClass (27ms)
+	initialDomainReloadingComplete (143ms)
+	LoadAllAssembliesAndSetupDomain (4942ms)
+		LoadAssemblies (4355ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (1227ms)
+			TypeCache.Refresh (184ms)
+				TypeCache.ScanAssembly (31ms)
+			BuildScriptInfoCaches (965ms)
+			ResolveRequiredComponents (16ms)
+	FinalizeReload (2020ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (1558ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (6ms)
+			SetLoadedEditorAssemblies (11ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (1255ms)
+			ProcessInitializeOnLoadMethodAttributes (181ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (1ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (18ms)
+Refreshing native plugins compatible for Editor in 1.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (1.4 MB). Loaded Objects now: 4032.
+Memory consumption went from 164.2 MB to 162.9 MB.
+Total: 24.287700 ms (FindLiveObjects: 1.487300 ms CreateObjectMapping: 0.636700 ms MarkObjects: 16.350400 ms  DeleteObjects: 5.504100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 17.747 seconds
+Refreshing native plugins compatible for Editor in 4.73 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 33.483 seconds
+Domain Reload Profiling: 51616ms
+	BeginReloadAssembly (4614ms)
+		ExecutionOrderSort (3ms)
+		DisableScriptedObjects (399ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (19ms)
+		CreateAndSetChildDomain (2403ms)
+	RebuildCommonClasses (272ms)
+	RebuildNativeTypeToScriptingClass (81ms)
+	initialDomainReloadingComplete (897ms)
+	LoadAllAssembliesAndSetupDomain (12244ms)
+		LoadAssemblies (7974ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (4707ms)
+			TypeCache.Refresh (1452ms)
+				TypeCache.ScanAssembly (202ms)
+			BuildScriptInfoCaches (2692ms)
+			ResolveRequiredComponents (454ms)
+	FinalizeReload (33506ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (30984ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (209ms)
+			SetLoadedEditorAssemblies (29ms)
+			BeforeProcessingInitializeOnLoad (191ms)
+			ProcessInitializeOnLoadAttributes (22237ms)
+			ProcessInitializeOnLoadMethodAttributes (8227ms)
+			AfterProcessingInitializeOnLoad (84ms)
+			EditorAssembliesLoaded (6ms)
+		ExecutionOrderSort2 (4ms)
+		AwakeInstancesAfterBackupRestoration (59ms)
+Refreshing native plugins compatible for Editor in 646.28 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (150.9 KB). Loaded Objects now: 4032.
+Memory consumption went from 166.1 MB to 166.0 MB.
+Total: 23881.832500 ms (FindLiveObjects: 6084.299500 ms CreateObjectMapping: 77.088300 ms MarkObjects: 16240.408800 ms  DeleteObjects: 1454.832300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 128.751 seconds
+Refreshing native plugins compatible for Editor in 7.01 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 24.352 seconds
+Domain Reload Profiling: 153122ms
+	BeginReloadAssembly (43859ms)
+		ExecutionOrderSort (4ms)
+		DisableScriptedObjects (3418ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (34ms)
+		CreateAndSetChildDomain (12451ms)
+	RebuildCommonClasses (2601ms)
+	RebuildNativeTypeToScriptingClass (1298ms)
+	initialDomainReloadingComplete (5641ms)
+	LoadAllAssembliesAndSetupDomain (75357ms)
+		LoadAssemblies (34954ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (43751ms)
+			TypeCache.Refresh (4062ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (39301ms)
+			ResolveRequiredComponents (67ms)
+	FinalizeReload (24366ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (21446ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (27ms)
+			SetLoadedEditorAssemblies (36ms)
+			BeforeProcessingInitializeOnLoad (281ms)
+			ProcessInitializeOnLoadAttributes (19488ms)
+			ProcessInitializeOnLoadMethodAttributes (1598ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (5ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (40ms)
+Refreshing native plugins compatible for Editor in 4277.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (155.7 KB). Loaded Objects now: 4032.
+Memory consumption went from 168.1 MB to 167.9 MB.
+Total: 15884.849500 ms (FindLiveObjects: 5707.249800 ms CreateObjectMapping: 6.680200 ms MarkObjects: 8947.098900 ms  DeleteObjects: 1126.472400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 87.486 seconds
+Refreshing native plugins compatible for Editor in 66.39 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  9.354 seconds
+Domain Reload Profiling: 98255ms
+	BeginReloadAssembly (30318ms)
+		ExecutionOrderSort (2ms)
+		DisableScriptedObjects (1626ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (18ms)
+		CreateAndSetChildDomain (8489ms)
+	RebuildCommonClasses (1805ms)
+	RebuildNativeTypeToScriptingClass (367ms)
+	initialDomainReloadingComplete (1560ms)
+	LoadAllAssembliesAndSetupDomain (54846ms)
+		LoadAssemblies (50030ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (15417ms)
+			TypeCache.Refresh (7942ms)
+				TypeCache.ScanAssembly (3839ms)
+			BuildScriptInfoCaches (5595ms)
+			ResolveRequiredComponents (208ms)
+	FinalizeReload (9359ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (6758ms)
+			LogAssemblyErrors (2ms)
+			InitializePlatformSupportModulesInManaged (53ms)
+			SetLoadedEditorAssemblies (84ms)
+			BeforeProcessingInitializeOnLoad (723ms)
+			ProcessInitializeOnLoadAttributes (5085ms)
+			ProcessInitializeOnLoadMethodAttributes (802ms)
+			AfterProcessingInitializeOnLoad (5ms)
+			EditorAssembliesLoaded (4ms)
+		ExecutionOrderSort2 (1ms)
+		AwakeInstancesAfterBackupRestoration (42ms)
+Refreshing native plugins compatible for Editor in 20.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (167.2 KB). Loaded Objects now: 4032.
+Memory consumption went from 170.0 MB to 169.8 MB.
+Total: 1076.753800 ms (FindLiveObjects: 100.545800 ms CreateObjectMapping: 51.152500 ms MarkObjects: 829.781400 ms  DeleteObjects: 95.266200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 23.269 seconds
+Refreshing native plugins compatible for Editor in 4.57 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 71.914 seconds
+Domain Reload Profiling: 95365ms
+	BeginReloadAssembly (4265ms)
+		ExecutionOrderSort (30ms)
+		DisableScriptedObjects (498ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (18ms)
+		CreateAndSetChildDomain (1921ms)
+	RebuildCommonClasses (222ms)
+	RebuildNativeTypeToScriptingClass (37ms)
+	initialDomainReloadingComplete (158ms)
+	LoadAllAssembliesAndSetupDomain (18700ms)
+		LoadAssemblies (5190ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12824ms)
+			TypeCache.Refresh (2948ms)
+				TypeCache.ScanAssembly (459ms)
+			BuildScriptInfoCaches (9227ms)
+			ResolveRequiredComponents (63ms)
+	FinalizeReload (71982ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (50063ms)
+			LogAssemblyErrors (1ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (53ms)
+			BeforeProcessingInitializeOnLoad (542ms)
+			ProcessInitializeOnLoadAttributes (28017ms)
+			ProcessInitializeOnLoadMethodAttributes (21349ms)
+			AfterProcessingInitializeOnLoad (39ms)
+			EditorAssembliesLoaded (32ms)
+		ExecutionOrderSort2 (6ms)
+		AwakeInstancesAfterBackupRestoration (1999ms)
+Refreshing native plugins compatible for Editor in 154.37 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.01 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (150.4 KB). Loaded Objects now: 4032.
+Memory consumption went from 171.9 MB to 171.8 MB.
+Total: 17857.199300 ms (FindLiveObjects: 1565.742000 ms CreateObjectMapping: 2.600900 ms MarkObjects: 15712.797500 ms  DeleteObjects: 574.063400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image D:\BusStopGit\Newest-BusGit\BusStopNoCorrupt\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in 64.009 seconds
+Refreshing native plugins compatible for Editor in 8.98 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in 48.700 seconds
+Domain Reload Profiling: 113048ms
+	BeginReloadAssembly (29870ms)
+		ExecutionOrderSort (1ms)
+		DisableScriptedObjects (1028ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (16ms)
+		CreateAndSetChildDomain (9022ms)
+	RebuildCommonClasses (2843ms)
+	RebuildNativeTypeToScriptingClass (2888ms)
+	initialDomainReloadingComplete (2453ms)
+	LoadAllAssembliesAndSetupDomain (26241ms)
+		LoadAssemblies (17557ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (12312ms)
+			TypeCache.Refresh (4115ms)
+				TypeCache.ScanAssembly (0ms)
+			BuildScriptInfoCaches (7729ms)
+			ResolveRequiredComponents (120ms)
+	FinalizeReload (48752ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (35407ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (25ms)
+			SetLoadedEditorAssemblies (39ms)
+			BeforeProcessingInitializeOnLoad (867ms)
+			ProcessInitializeOnLoadAttributes (30124ms)
+			ProcessInitializeOnLoadMethodAttributes (4086ms)
+			AfterProcessingInitializeOnLoad (169ms)
+			EditorAssembliesLoaded (97ms)
+		ExecutionOrderSort2 (2ms)
+		AwakeInstancesAfterBackupRestoration (1378ms)
+Refreshing native plugins compatible for Editor in 60.25 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 3254 unused Assets / (202.3 KB). Loaded Objects now: 4032.
+Memory consumption went from 173.8 MB to 173.6 MB.
+Total: 5331.456600 ms (FindLiveObjects: 727.623700 ms CreateObjectMapping: 11.039500 ms MarkObjects: 4476.838900 ms  DeleteObjects: 115.274000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
