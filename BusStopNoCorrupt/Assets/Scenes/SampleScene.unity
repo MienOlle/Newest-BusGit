@@ -15,9 +15,9 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 10
   m_Fog: 1
-  m_FogColor: {r: 0.33333334, g: 0.3464614, b: 0.5803922, a: 0.0627451}
+  m_FogColor: {r: 0, g: 0, b: 0, a: 0.0627451}
   m_FogMode: 3
-  m_FogDensity: 0.0012
+  m_FogDensity: 0.0001
   m_LinearFogStart: 0
   m_LinearFogEnd: 1000
   m_AmbientSkyColor: {r: 0, g: 0, b: 0, a: 1}
@@ -38652,7 +38652,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 0.72156864, a: 1}
   m_Intensity: 2
   m_Range: 100
-  m_SpotAngle: 100
+  m_SpotAngle: 75
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -39798,6 +39798,7 @@ GameObject:
   - component: {fileID: 1190740851}
   - component: {fileID: 1190740852}
   - component: {fileID: 1190740853}
+  - component: {fileID: 1190740854}
   m_Layer: 0
   m_Name: GoAudio
   m_TagString: Untagged
@@ -39927,11 +39928,108 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 90c7c6bd1e292134eb05de31ac843d75, type: 3}
+  m_Resource: {fileID: 8300000, guid: 90c7c6bd1e292134eb05de31ac843d75, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.12
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.6
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1190740854
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190740850}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ac1364a25264235bc5e47511cce7eac, type: 3}
   m_Resource: {fileID: 8300000, guid: 8ac1364a25264235bc5e47511cce7eac, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.05
-  m_Pitch: 1.2
+  m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
@@ -40969,13 +41067,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382674094}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.19748622, y: -0, z: -0, w: 0.9803057}
+  m_LocalRotation: {x: 0.18103409, y: 0, z: 0, w: 0.9834768}
   m_LocalPosition: {x: 1.8999939, y: 2.68, z: 7.7099915}
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1109140766}
-  m_LocalEulerAnglesHint: {x: 22.78, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 20.86, y: 0, z: 0}
 --- !u!108 &1382674096
 Light:
   m_ObjectHideFlags: 0
@@ -40989,7 +41087,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 0.7529412, a: 1}
   m_Intensity: 2
   m_Range: 100
-  m_SpotAngle: 100
+  m_SpotAngle: 75
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -41297,7 +41395,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1414655836
 Transform:
   m_ObjectHideFlags: 0
@@ -41960,7 +42058,7 @@ ParticleSystem:
         m_RotationOrder: 4
     randomizeRotationDirection: 0
     gravitySource: 0
-    maxNumParticles: 1000
+    maxNumParticles: 800
     customEmitterVelocity: {x: 0, y: 0, z: 0}
     size3D: 0
     rotation3D: 0
@@ -47128,7 +47226,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 127
   m_IsActive: 1
 --- !u!154 &1552066933
 TerrainCollider:
