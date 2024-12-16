@@ -5,11 +5,10 @@ using UnityEngine;
 public class MonitorLogic : MonoBehaviour
 {
     public buttonToggleScript unselectAnom;
-    // public gameLogic BusController;
     public busScript BusController;
     public restartLogic LevelController;
     private bool[] anomalySelected;
-    private int numAnomalyType = 3;
+    private int numAnomalyType = 4;
     private bool[] anomalyActivated;
     private int numButton;
     void Start(){

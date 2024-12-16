@@ -12,8 +12,14 @@ public class gameLogic : MonoBehaviour
     public GameObject anomaly1Changed;
     public GameObject anomaly2Origin;
     public GameObject anomaly2Changed;
+    public GameObject anomaly3Origin;
+    public GameObject anomaly3Changed;
+    public GameObject anomaly4Origin;
+    public GameObject anomaly4Changed;
     bool anomaly1State;
     bool anomaly2State;
+    bool anomaly3State;
+    bool anomaly4State;
 
     void Awake()
     {
@@ -32,12 +38,14 @@ public class gameLogic : MonoBehaviour
         //begin by resetting all state to false
         anomaly1State = false;
         anomaly2State = false;
+        anomaly3State = false;
+        anomaly4State = false;
         
         //randomize number of anomaly activated
-        int numAnomaly = Random.Range(0,3);
+        int numAnomaly = Random.Range(0,5);
         while(numAnomaly > 0){
             //randomize which anomaly got activated
-            int activateAnomaly = Random.Range(1,3);
+            int activateAnomaly = Random.Range(1,5);
             if(activateAnomaly == 1 && anomaly1State == false){
                 anomaly1State = true;
                 anomalyChecker.setAnomActivated(0, true);       //Setting the anomActivated in the MonitorLogic for checking
@@ -48,7 +56,18 @@ public class gameLogic : MonoBehaviour
                 anomalyChecker.setAnomActivated(1, true);
 
                 anomaly2();
-            }else{
+            }else if(activateAnomaly == 3 && anomaly3State == false){
+                anomaly3State = true;
+                anomalyChecker.setAnomActivated(2, true);
+
+                anomaly3();
+            }else if(activateAnomaly == 4 && anomaly4State == false){
+                anomaly4State = true;
+                anomalyChecker.setAnomActivated(3, true);
+
+                anomaly4();
+            }
+            else{
                 continue;
             }
 
@@ -71,5 +90,17 @@ public class gameLogic : MonoBehaviour
         anomaly2Origin.SetActive(false);
         anomaly2Changed.SetActive(true);
         Debug.Log("Anomaly 2 Activated");
+    }
+
+    void anomaly3(){
+        anomaly3Origin.SetActive(false);
+        anomaly3Changed.SetActive(true);
+        Debug.Log("Anomaly 3 Activated");
+    }
+
+    void anomaly4(){
+        anomaly4Origin.SetActive(false);
+        anomaly4Changed.SetActive(true);
+        Debug.Log("Anomaly 4 Activated");
     }
 }
